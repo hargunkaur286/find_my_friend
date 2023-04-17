@@ -3,11 +3,14 @@ import { AppBar, Box, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Chat from '../components/Chat'
+import Nav from '../components/Nav'
+import { Search } from '@mui/icons-material'
+import Searchbox from '../components/Searchbox'
 
 const Chatpage = () => {
   return (
     <div>
-      <Box>
+      <Box >
        <Box><Typography variant='h1' textAlign={'center'}
         color={"black"}
         >CHAT</Typography>
@@ -15,31 +18,34 @@ const Chatpage = () => {
        
       
         <Box position={"relative"} component={"div"} sx={{
-            color:"red",
+            color:"white",
             width:"100%",
             height:"100%",
 
     }}>
         <Box component="div" display={"flex"} style={{
             width: "100%",
-            height: "40rem",
+            height: "60rem",
             backgroundColor:"#7f7f93"
         }}>
 
        {/* <Sidebar /> */}
        <Box sx={{
             flexGrow:1,
-        }}>
-        Sidebar
+        }} style={{backgroundColor:"#C7E7E1",
+        }} >
+        <Nav/>
+        <Searchbox/>
         </Box>
        <Box  sx={{
-            flexGrow:2,
+            flexGrow:3,
             
         }}
         
-        style={{backgroundColor:"red"}}
+        style={{backgroundColor:"#75756c",
+        }}
         >
-     Chat
+     <Chat/>
         </Box>
        {/* <Chat/> */}
         </Box>

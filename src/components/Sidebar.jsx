@@ -7,7 +7,8 @@ const Sidebar = () => {
     <div>
         <Box sx={{
             flexGrow:1,
-        }}>
+            backgroundColor:"red"
+        }}  style={{  backgroundColor:"red"}}>
         Sidebar
         </Box>
     

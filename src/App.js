@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import Navbar from "./components/Navbar";
 import Find from "./Pages/Find";
 import Chat from "./Pages/Chatpage";
+import Chatpage from "./Pages/Chatpage";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <Routes>
     <Route path="/home" element={<Home/>} />
       <Route path="/find" element={<Find/>} />
-      <Route path="/chat" element={<Chat/>} />
+      <Route path="/chat" element={<Chatpage/>} />
       
     </Routes>
     </BrowserRouter>
