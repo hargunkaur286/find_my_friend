@@ -1,16 +1,21 @@
 import React from 'react'
 import Nav from './Nav'
 import { Box } from '@mui/material'
+import Searchbox from './Searchbox'
 
 const Sidebar = () => {
   return (
     <div>
-        <Box sx={{
-            flexGrow:1,
-            backgroundColor:"red"
-        }}  style={{  backgroundColor:"red"}}>
-        Sidebar
-        </Box>
+      <Box height={"2rem"}>
+      <Nav/>
+        <Searchbox/>
+        
+      </Box>
+     
+
+
+
+      
     
     </div>
   )

@@ -38,32 +38,32 @@ const Searchbox = () => {
   {/* <Lists/> */}
      <Stack direction="column" spacing={2} > 
        <Box display={"flex"} >
-      <Avatar>H</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,}}>Hari
+      <Avatar sx={{margin:"1rem"}}>H</Avatar>
+      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Harry
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
       <Box display={"flex"} >
-      <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,}}>Hari
+      <Avatar sx={{ bgcolor: deepOrange[500] ,margin:"1rem"}}>N</Avatar>
+      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Neena
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
       <Box display={"flex"} >
-      <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,}}>Hari
+      <Avatar sx={{ bgcolor: "red",margin:"1rem" }}>P</Avatar>
+      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Param
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
       <Box display={"flex"} >
-      <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,}}>Hari
+      <Avatar sx={{ bgcolor: "purple" ,margin:"1rem"}}>S</Avatar>
+      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Sam
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
       <Box display={"flex"} >
-      <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,}}>Hari
+      <Avatar sx={{ bgcolor: deepPurple[500],margin:"1rem" }}>T</Avatar>
+      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Tarun
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>

@@ -25,7 +25,7 @@ const Chatpage = () => {
     }}>
         <Box component="div" display={"flex"} style={{
             width: "100%",
-            height: "60rem",
+            height: "80rem",
             backgroundColor:"#7f7f93"
         }}>
 
@@ -34,15 +34,16 @@ const Chatpage = () => {
             flexGrow:1,
         }} style={{backgroundColor:"#C7E7E1",
         }} >
-        <Nav/>
-        <Searchbox/>
+        <Sidebar/>
         </Box>
+        {/* chat */}
        <Box  sx={{
-            flexGrow:3,
+            flexGrow:1.5,
             
         }}
         
         style={{backgroundColor:"#75756c",
+       
         }}
         >
      <Chat/>

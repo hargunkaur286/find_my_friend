@@ -6,12 +6,18 @@ import CallIcon from '@mui/icons-material/Call';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import Message from './Messages';
 import Messages from './Messages';
+import Inputs from './Inputs';
 
 const Chat = () => {
   return (
     <>
-   <Typography variant="h2"style={{backgroundColor:"black"}}>
-   <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
+   <Box style={{backgroundColor:"inherit",height:"4rem",padding:"2rem"}}>
+   <Box sx={{display:"flex",alignItems:"center",justifyContent:"flex-start"}}>
+    <Avatar sx={{ bgcolor: deepOrange[500] ,marginRight:"1rem"}}>N</Avatar>
+   <span>Nishtha</span>
+    </Box>
+   
+   
   
    
 <Box display={"flex"} style={{justifyContent:"flex-end"}}>  
@@ -25,9 +31,12 @@ const Chat = () => {
 </Stack>
 
    </Box>
-   <Messages/>
+   </Box>
    
-   </Typography>
+   <Messages/>
+   <Inputs/>
+   
+   
          
     </>
        
