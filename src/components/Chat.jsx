@@ -11,17 +11,23 @@ import Inputs from './Inputs';
 const Chat = () => {
   return (
     <>
-   <Box style={{backgroundColor:"inherit",height:"4rem",padding:"2rem"}}>
-   <Box sx={{display:"flex",alignItems:"center",justifyContent:"flex-start"}}>
-    <Avatar sx={{ bgcolor: deepOrange[500] ,marginRight:"1rem"}}>N</Avatar>
-   <span>Nishtha</span>
-    </Box>
    
-   
+     <Box sx={{height:"55rem",width:"80rem",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',  border: ' solid 10px #124C5F ',borderRadius:"2rem",backgroundImage: 'linear-gradient(to bottom right, #FFF2B3, yellow)',}}>
+
   
    
-<Box display={"flex"} style={{justifyContent:"flex-end"}}>  
-<Stack direction="row" position={"absolute"} spacing={5} marginTop={"-3rem"} marginRight={"1rem"}>
+   
+   <Box sx={{display:"flex",alignItems:"center",justifyContent:"flex-start", margin:"1rem",backgroundColor:"#124C5F",padding:"1rem",color:"white"}}>
+   <Avatar sx={{ bgcolor: deepOrange[500] ,marginRight:"1rem"}}>N</Avatar>
+   <span>Nishtha</span>
+    </Box>
+
+
+
+   
+
+    <Box display={"flex"} style={{justifyContent:"flex-end",color:"white",alignItems:"start"}}>  
+<Stack direction="row" position={"absolute"} spacing={5} marginTop={"-5rem"} marginRight={"2rem"}>
 <CallIcon style={{    width:"2rem",
     height: "auto"
 }}/>
@@ -29,12 +35,20 @@ const Chat = () => {
     height: "auto"
 }} />
 </Stack>
-
+ 
    </Box>
-   </Box>
-   
    <Messages/>
-   <Inputs/>
+   </Box>
+  
+   
+   
+  
+   
+
+   
+   
+  
+
    
    
          

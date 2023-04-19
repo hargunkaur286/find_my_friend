@@ -40,20 +40,14 @@ const Inputs = () => {
   ))}
 </SpeedDial>
      */}
-    <Box
-      component="form"
-  
-      sx={{
-        '& > :not(style)': {  width: '75%',marginLeft:"1rem",bottom: 2, left:0,top:3 },
-      display:"flex"}}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="outlined-basic"  variant="outlined"
-      placeholder='Message'  />
+      <Box style={{display:"flex",color:"white"}}>
+    <TextField id="standard-basic"   placeholder='TYPE' type="search" sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px"}}
+ />
+    
+      
       {/* <SendIcon /> */}
        
-      <Button variant="primary" sx={{marginRight:0,width:"auto"}} endIcon={<SendIcon />}>
+      <Button variant="contained" sx={{marginRight:0,borderRadius:"15px",width:"10%",height:"10%",marginTop:"1rem"}} endIcon={<SendIcon />}>
         Send
       </Button>  
     

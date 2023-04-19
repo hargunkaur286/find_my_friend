@@ -11,20 +11,14 @@ import { Search } from '@mui/icons-material';
 const Searchbox = () => {
   return (
     <>
-    <Box sx={{color:"white"}}>
-    {/* <TextField id="outlined-search"  type="search" sx={{maxWidth:"70em"}} /> */}
+    <Box sx={{color:"white",width:"100%"}}>
+   
+    
     
     <Box style={{display:"flex"}}>
-    <FormControl fullWidth sx={{ m: 0 }} variant="filled" >
-        
-        <FilledInput
-          id="filled-adornment-amount"
-          
-          
-        />
-         </FormControl>
-        <Box display={"flex"} style={{justifyContent:"flex-end"}}>  
-<Stack direction="row" position={"absolute"} spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
+    <TextField id="outlined-search"   placeholder='SEARCH' type="search" sx={{maxWidth:"70em",border:"2px solid"} } />
+   
+<Stack direction="row"  spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
 
   <Search   style={{    width:"3rem",
     height: "auto"
@@ -33,11 +27,9 @@ const Searchbox = () => {
       
     </Stack>
     </Box> 
-    </Box>
-    
-  {/* <Lists/> */}
-     <Stack direction="column" spacing={2} > 
-       <Box display={"flex"} >
+   
+     <Stack direction="column" spacing={2} sx={{overflowY: "hidden"}} > 
+       <Box display={"flex"}  >
       <Avatar sx={{margin:"1rem"}}>H</Avatar>
       <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Harry
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
