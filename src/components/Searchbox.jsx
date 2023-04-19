@@ -11,7 +11,7 @@ import { Search } from '@mui/icons-material';
 const Searchbox = () => {
   return (
     <>
-    <Box sx={{color:"white",width:"100%"}}>
+    <Box sx={{color:"white",width:"100%",bgcolor:"white"}}>
    
     
     
@@ -21,7 +21,9 @@ const Searchbox = () => {
 <Stack direction="row"  spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
 
   <Search   style={{    width:"3rem",
-    height: "auto"
+    height: "auto",
+    color:"black",
+    cursor:"pointer"
 }}/>
 
       

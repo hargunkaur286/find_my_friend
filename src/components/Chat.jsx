@@ -12,7 +12,7 @@ const Chat = () => {
   return (
     <>
    
-     <Box sx={{height:"55rem",width:"80rem",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',  border: ' solid 10px #124C5F ',borderRadius:"2rem",backgroundImage: 'linear-gradient(to bottom right, #FFF2B3, yellow)',}}>
+     <Box sx={{height:"auto",minWidth:"20rem",maxWidth:"80rem",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',  border: ' solid 10px #124C5F ',borderRadius:"2rem",bgcolor:"white"}}>
 
   
    

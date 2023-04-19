@@ -40,15 +40,15 @@ const Inputs = () => {
   ))}
 </SpeedDial>
      */}
-      <Box style={{display:"flex",color:"white"}}>
-    <TextField id="standard-basic"   placeholder='TYPE' type="search" sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px"}}
+      <Box style={{display:"flex",color:"white",bgcolor:"white"}}>
+    <TextField id="standard-basic"   placeholder='TYPE' type="search" sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px",bgcolor:"white"}}
  />
     
       
       {/* <SendIcon /> */}
        
-      <Button variant="contained" sx={{marginRight:0,borderRadius:"15px",width:"10%",height:"10%",marginTop:"1rem"}} endIcon={<SendIcon />}>
-        Send
+      <Button  sx={{marginRight:"2%",borderRadius:"10px",width:"10%",height:"10%",marginTop:"1rem",padding:"10"}} endIcon={<SendIcon />}>
+        
       </Button>  
     
         

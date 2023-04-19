@@ -11,15 +11,16 @@ const Messages = () => {
   const LeftTextstyle={
 width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',borderRadius:"2rem", borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 2px rgba(255, 255, 255, 0.8)',backgroundImage: 'linear-gradient(to bottom right, #FFF2B3, green),',padding:"1rem"
 }
-const RightTextstyle={marginLeft:"60rem",
+const RightTextstyle={marginLeft:{xs:"10rem",md:"40rem"},
 width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',borderRadius:"2rem", borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 2px rgba(255, 255, 255, 0.8)',backgroundImage: 'linear-gradient(to bottom right, #FFF2B3, green),',padding:"1rem"
 }
   return (
     <>
     <Box  >
-       <Box  height="40rem" sx={{overflowY: "auto",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem"}}>
+       <Box  height="40rem" sx={{overflowY: "auto",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem",maxWidth:"100%",bgcolor:"white"}}>
         
-         <Box sx={LeftTextstyle}>Hi,How are you?</Box>
+         <Box sx={LeftTextstyle}
+         >Hi,How are you?</Box>
       <Box component="div" sx={RightTextstyle}>
       Hi,Iam Fine.
           </Box>

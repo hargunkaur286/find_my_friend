@@ -9,8 +9,8 @@ import Searchbox from '../components/Searchbox'
 
 const Chatpage = () => {
   return (
-    <div>
-     
+    <div >
+     <Box sx={{background: 'radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)'}}>
       <Typography variant='h1' textAlign={'center'}
         color={"black"}
         >CHAT</Typography>
@@ -18,7 +18,7 @@ const Chatpage = () => {
 
 
      <Stack  >
-       <Box width="100%" sx={{display:"flex"}} >
+       <Box width="100%" sx={{display:"flex",justifyContent:"center"}} >
        
        <Sidebar/>
         <Chat/>
@@ -27,7 +27,7 @@ const Chatpage = () => {
       
      
       </Stack>
-   
+      </Box>
     </div>
   )
 }
