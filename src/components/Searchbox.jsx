@@ -1,5 +1,5 @@
 import { Box, FilledInput, FormControl, InputAdornment, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import {TextField} from '@mui/material'
 import img from "../images/img1.jpg"
 import Avatar from '@mui/material/Avatar';
@@ -9,6 +9,7 @@ import Lists from './Lists';
 import { Search } from '@mui/icons-material';
 
 const Searchbox = () => {
+  const [name,setName]=useState("")
   return (
     <>
     <Box sx={{color:"white",width:"100%",bgcolor:"white"}}>
@@ -16,15 +17,19 @@ const Searchbox = () => {
     
     
     <Box style={{display:"flex"}}>
-    <TextField id="outlined-search"   placeholder='SEARCH' type="search" sx={{maxWidth:"70em",border:"2px solid"} } />
+    <input id="outlined-search"   onChange={(e)=>{
+      // console.log(e)
+      setName(e.target.value);}}  placeholder='SEARCH' type="search" sx={{maxWidth:"70em",border:"2px solid"} } />
    
 <Stack direction="row"  spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
 
-  <Search   style={{    width:"3rem",
+  <Search   sx={   {
+      width:"3rem",
     height: "auto",
     color:"black",
-    cursor:"pointer"
-}}/>
+    cursor:"pointer",}}
+  
+   /> 
 
       
     </Stack>

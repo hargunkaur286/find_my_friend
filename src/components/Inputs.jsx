@@ -1,6 +1,6 @@
 import { Box, Button, FilledInput, FormControl, Stack, TextField, Typography } from '@mui/material'
 import { blueGrey } from '@mui/material/colors'
-import React from 'react'
+import React, { useState } from 'react'
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
@@ -21,7 +21,10 @@ const Inputs = () => {
         { icon: <ShareIcon />, name: 'Share' },
       ];
       
-  
+      const [chat,setChat]=useState("")
+      function handleClick(){
+        console.log(chat)
+      }
     return (
     <>
     <Box >
@@ -41,13 +44,19 @@ const Inputs = () => {
 </SpeedDial>
      */}
       <Box style={{display:"flex",color:"white",bgcolor:"white"}}>
-    <TextField id="standard-basic"   placeholder='TYPE' type="search" sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px",bgcolor:"white"}}
+    <input id="standard-basic"   placeholder='TYPE' type="search" maxWidth="70rem" 
+    onChange={(e)=>{
+      // console.log(e)
+      setChat(e.target.value);
+    
+              
+    }} sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px",bgcolor:"white"}}
  />
     
       
       {/* <SendIcon /> */}
        
-      <Button  sx={{marginRight:"2%",borderRadius:"10px",width:"10%",height:"10%",marginTop:"1rem",padding:"10"}} endIcon={<SendIcon />}>
+      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"10px",width:"10%",height:"10%",marginTop:"1rem",padding:"10"}} endIcon={<SendIcon />}>
         
       </Button>  
     

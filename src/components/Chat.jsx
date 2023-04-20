@@ -1,5 +1,5 @@
 import { AppBar, Box, Stack, Toolbar, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import { deepOrange, deepPurple } from '@mui/material/colors';
 import Avatar from '@mui/material/Avatar';
 import CallIcon from '@mui/icons-material/Call';
@@ -9,6 +9,8 @@ import Messages from './Messages';
 import Inputs from './Inputs';
 
 const Chat = () => {
+
+  
   return (
     <>
    
@@ -37,7 +39,7 @@ const Chat = () => {
 </Stack>
  
    </Box>
-   <Messages/>
+   <Messages   />
    </Box>
   
    
