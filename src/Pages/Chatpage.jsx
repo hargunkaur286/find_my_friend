@@ -1,49 +1,32 @@
-import { AppBar, Box, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Stack, Toolbar, Typography } from '@mui/material'
 
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Chat from '../components/Chat'
+import Nav from '../components/Nav'
+import { Search } from '@mui/icons-material'
+import Searchbox from '../components/Searchbox'
 
 const Chatpage = () => {
   return (
-    <div>
-      <Box>
-       <Box><Typography variant='h1' textAlign={'center'}
+    <div >
+     <Box sx={{background: 'radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)'}}>
+      <Typography variant='h1' textAlign={'center'}
         color={"black"}
         >CHAT</Typography>
-        </Box>
+     
+
+
+     <Stack  >
+       <Box width="100%" sx={{display:"flex",justifyContent:"center"}} >
        
+       <Sidebar/>
+        <Chat/>
+    
+        </Box>
       
-        <Box position={"relative"} component={"div"} sx={{
-            color:"red",
-            width:"100%",
-            height:"100%",
-
-    }}>
-        <Box component="div" display={"flex"} style={{
-            width: "100%",
-            height: "40rem",
-            backgroundColor:"#7f7f93"
-        }}>
-
-       {/* <Sidebar /> */}
-       <Box sx={{
-            flexGrow:1,
-        }}>
-        Sidebar
-        </Box>
-       <Box  sx={{
-            flexGrow:2,
-            
-        }}
-        
-        style={{backgroundColor:"red"}}
-        >
-     Chat
-        </Box>
-       {/* <Chat/> */}
-        </Box>
-        </Box>
+     
+      </Stack>
       </Box>
     </div>
   )
