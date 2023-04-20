@@ -8,21 +8,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import sample from '../assets/sample.jpeg';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 
 const Profile = () => {
 const theme = useTheme();
 
   return (
     <>
-    {/* <Box sx={{background: 'radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)'}}> */}
-    <Box sx={{background: 'black'}}>
-
+    <Box>
       <Navbar/>
-      <Typography variant="h4" component="h2" sx={{textAlign: "center", paddingTop: 1, color: 'white'}}>
+      <Typography variant="h4" component="h2" sx={{textAlign: "center", paddingTop: 1}}>
         Profile Page
       </Typography>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
-      <Card sx={{ display: 'flex', padding: 2, borderRadius: 10, alignItems: 'center', backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2}}>
+      <Card sx={{ display: 'flex', padding: 2, alignItems: 'center', borderRadius: 10, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2, width: 1500}}>
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '100%'}}
@@ -30,13 +30,16 @@ const theme = useTheme();
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' , color: 'white'}}>
+        <CardContent sx={{ flex: '1 0 auto'}}>
           <Typography component="div" variant="h5">
             Profile Info
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </Typography>
+          <TextField id="standard-basic" label="Name" variant="standard" />
+          <div>
+          <TextField id="standard-basic" label="email" variant="standard" />
+          </div>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }}>Edit</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }}>Save</Button>
         </CardContent>
       </Box>
     </Card>
