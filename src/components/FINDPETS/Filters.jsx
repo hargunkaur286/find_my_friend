@@ -7,7 +7,7 @@ const Filters = () => {
   return (
   <>
   <Box>
-        <Typography variant='h1' textAlign={"center"} >FIND MY PETS</Typography>
+        <Typography variant='h1' textAlign={"center"} >FIND  PETS</Typography>
     <Choices/>
     
     
