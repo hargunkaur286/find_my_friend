@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -13,7 +13,18 @@ import Button from '@mui/material/Button';
 
 const Profile = () => {
 const theme = useTheme();
-
+const [email,setEmail]=useState("")
+const [name,setName]=useState("")
+const handleClick=()=>{
+  document.getElementById("email").innerHTML=`<h1>${email}</h1>`
+  document.getElementById("name").innerHTML=name
+}
+const handleDel=()=>{
+  document.getElementById("email").innerHTML=""
+  document.getElementById("name").innerHTML=""
+  setName("")
+  setEmail("")
+}
   return (
     <>
     <Box>
@@ -22,7 +33,7 @@ const theme = useTheme();
         Profile Page
       </Typography>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
-      <Card sx={{ display: 'flex', padding: 2, alignItems: 'center', borderRadius: 10, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2, width: 1500}}>
+      <Card sx={{ display: 'flex', alignItems: 'center', borderRadius: 10, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2, width: 1500}}>
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '100%'}}
@@ -30,16 +41,30 @@ const theme = useTheme();
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto'}}>
+        <CardContent sx={{flex: '1 0 auto',alignItems:"center"}}>
           <Typography component="div" variant="h5">
             Profile Info
           </Typography>
-          <TextField id="standard-basic" label="Name" variant="standard" />
+          <input id="name" label="Name" variant="standard"
+          onChange={(e)=>{
+            console.log(e)
+            console.log(e.target.value)
+            setName(e.target.value)
+ 
+           }}
+          />
           <div>
-          <TextField id="standard-basic" label="email" variant="standard" />
+          <input id="email" label="Email" variant="standard" 
+          onChange={(e)=>{
+           console.log(e)
+           console.log(e.target.value)
+           setEmail(e.target.value)
+
+          }}
+          />
           </div>
-          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }}>Edit</Button>
-          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }}>Save</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleDel}>Edit</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleClick}>Save</Button>
         </CardContent>
       </Box>
     </Card>

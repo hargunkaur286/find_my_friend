@@ -5,6 +5,8 @@ import Filters from '../components/FINDPETS/Filters'
 import Cards from '../components/FINDPETS/Cards'
 import Bottom from '../components/Bottom'
 import { Box } from '@mui/material'
+import Cardss from '../components/Cardss'
+import Navbar from '../components/Navbar'
 
 
 const Find = () => {
@@ -12,8 +14,10 @@ const Find = () => {
   // {backgroundImage: 'linear-gradient(to bottom right, #FFF2B3, gray)',margin:0
   return (
     <Box>
+      <Navbar/>
       <Filters/>
-      <Cards/>
+      {/* <Cards/> */}
+<Cardss/>      
       <footer>
          <Bottom/>
       </footer>

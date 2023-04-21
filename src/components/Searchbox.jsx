@@ -12,22 +12,24 @@ const Searchbox = () => {
   const [name,setName]=useState("")
   return (
     <>
-    <Box sx={{color:"white",width:"100%",bgcolor:"white"}}>
+    <Box sx={{width:"100%",bgcolor:"white",color:"#124C5F" ,border:"solid 5px",}}>
    
     
     
     <Box style={{display:"flex"}}>
-    <input id="outlined-search"   onChange={(e)=>{
+    <input    onChange={(e)=>{
       // console.log(e)
-      setName(e.target.value);}}  placeholder='SEARCH' type="search" sx={{maxWidth:"70em",border:"2px solid"} } />
+      setName(e.target.value);}}  placeholder='SEARCH' type="search" style={{maxWidth:"70em",border:"2px solid #124C5F",padding:"3%"} } />
    
 <Stack direction="row"  spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
 
   <Search   sx={   {
-      width:"3rem",
+      maxWidth:"3rem",
     height: "auto",
     color:"black",
-    cursor:"pointer",}}
+    cursor:"pointer",
+  color:"#124C5F"
+  }}
   
    /> 
 
@@ -35,34 +37,34 @@ const Searchbox = () => {
     </Stack>
     </Box> 
    
-     <Stack direction="column" spacing={2} sx={{overflowY: "hidden"}} > 
-       <Box display={"flex"}  >
-      <Avatar sx={{margin:"1rem"}}>H</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Harry
+     <Stack direction="column" spacing={2} sx={{overflowY: "scroll",height:"100vh"}} > 
+       <Box display={"flex"}sx={{width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)',borderRadius:"1rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px rgb(128,128,128,0.3)',padding:"1rem"}}   >
+      <Avatar sx={{margin:"1rem" }}>H</Avatar>
+      <Typography variant='h4' sx={{margin:"1rem"}}>Harry
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
-      <Box display={"flex"} >
+      <Box display={"flex"} sx={{width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)',borderRadius:"1rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px 	rgb(128,128,128,0.3) ',padding:"1rem"}}>
       <Avatar sx={{ bgcolor: deepOrange[500] ,margin:"1rem"}}>N</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Neena
+      <Typography variant='h4' sx={{margin:"1rem"}}>Neena
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
-      <Box display={"flex"} >
+      <Box display={"flex"} sx={{width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)',borderRadius:"1rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px rgb(128,128,128,0.3) ',padding:"1rem"}} >
       <Avatar sx={{ bgcolor: "red",margin:"1rem" }}>P</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Param
+      <Typography variant='h4' sx={{margin:"1rem"}}>Param
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
-      <Box display={"flex"} >
+      <Box display={"flex"} sx={{width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)',borderRadius:"1rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px rgb(128,128,128,0.3) ',padding:"1rem"}} >
       <Avatar sx={{ bgcolor: "purple" ,margin:"1rem"}}>S</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Sam
+      <Typography variant='h4' sx={{margin:"1rem"}}>Sam
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>
-      <Box display={"flex"} >
+      <Box display={"flex"} sx={{width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)',borderRadius:"1rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px rgb(128,128,128,0.3)',padding:"1rem"}} >
       <Avatar sx={{ bgcolor: deepPurple[500],margin:"1rem" }}>T</Avatar>
-      <Typography variant='h4' sx={{color:"black" ,margin:"1rem"}}>Tarun
+      <Typography variant='h4' sx={{margin:"1rem",}}>Tarun
       <Typography variant='h6' sx={{color:"gray" ,}}>okay,thank you.</Typography>
       </Typography>
       </Box>

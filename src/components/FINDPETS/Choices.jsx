@@ -6,18 +6,18 @@ import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 
 const Choices = () => {
-  
+ 
     return (
-    <Box marginLeft="30%">
-      <AppBar sx={{backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)'
-,marginTop:"15rem",textTransform:"capitalize",marginRight:"2%",marginLeft:"2",borderRadius:"2rem",width:"96%"
+    <Box marginLeft="2%">
+      <AppBar position='static' sx={{backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px ', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)'
+,marginTop:"1rem",textTransform:"capitalize",marginRight:"2%",borderRadius:"2rem",width:"96%"
 }}>
     <Toolbar sx={{justifyContent:"space-evenly",}}>
        
-      <Box sx={{ minWidth: 120 }}>
+      <Box sx={{ minWidth: 120, }}>
       {/* <Typography>FITERS</Typography> */}
       <FormControl textTransform="capitalize">
-        <InputLabel variant="standard" htmlFor="uncontrolled-native">
+        <InputLabel variant="standard" htmlFor="uncontrolled-native" margin="2px">
           species
         </InputLabel>
         <NativeSelect
@@ -25,6 +25,7 @@ const Choices = () => {
           inputProps={{
             name: 'species',
             id: 'uncontrolled-native',
+            
           }}
         >
           <option value={10}>Dog</option>
@@ -82,10 +83,10 @@ const Choices = () => {
           <option value={30}>Thirty</option>
         </NativeSelect>
       </FormControl>
-      <Button variant="contained" sx={{borderRadius:"15px",width:{
+      <Button  sx={{borderRadius:"15px",width:{
         xs:"50",
         md:"100"
-      },height:"10%",textSizeAdjust:"auto"}} 
+      },height:"10%",textSizeAdjust:"auto",color:"#124C5F"}} 
     > APPLY FILTERS
       </Button>  
     

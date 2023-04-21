@@ -20,7 +20,7 @@ width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10p
    
 <>
     <Box  >
-       <Box  height="40rem" sx={{overflowY: "auto",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem",maxWidth:"100%",bgcolor:"white"}}>
+       <Box  height="40rem" sx={{overflowY: "auto",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem",maxWidth:"100%",bgcolor:"white",height:"90vh"}}>
         
          <Box sx={LeftTextstyle}
          >Hi,How are you?</Box>

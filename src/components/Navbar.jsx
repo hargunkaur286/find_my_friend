@@ -13,8 +13,9 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Stack from '@mui/material/Stack';
 import CardMedia from '@mui/material/CardMedia';
 import logo from '../assets/logo.png';
+import { useNavigate } from 'react-router-dom';
 
-const pages = ['Our Services', 'About Us', 'Products', 'Pet Care', 'Contact Us'];
+const pages = ['FIND','CHAT','PROFILE'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,6 +36,7 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  const navigate=useNavigate()
   return (
     <AppBar position="static" sx={{backgroundColor: 'white', color: 'black', backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))'}}>
       <Container maxWidth="xl">
@@ -86,9 +88,10 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={()=>{   navigate(`/${page}`)}}
                 sx={{ my: 2, color: 'white', display: 'block', color: 'black' }}
               >
+             
                 {page}
               </Button>
             ))}

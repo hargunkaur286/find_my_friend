@@ -14,12 +14,7 @@ import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 import EditIcon from '@mui/icons-material/Edit';
 const Inputs = () => {
-    const actions = [
-        { icon: <FileCopyIcon />, name: 'Copy' },
-        { icon: <SaveIcon />, name: 'Save' },
-        { icon: <PrintIcon />, name: 'Print' },
-        { icon: <ShareIcon />, name: 'Share' },
-      ];
+   
       
       const [chat,setChat]=useState("")
       function handleClick(){
@@ -27,36 +22,35 @@ const Inputs = () => {
       }
     return (
     <>
-    <Box >
+    <Box display={"flex"} justifyContent="space-between"  >
     
-    {/* <SpeedDial
-  ariaLabel="SpeedDial basic example"
-  sx={{ position: 'absolute', bottom: 16, right: 16 }}
-  icon={<SpeedDialIcon fontSize={"small"} />}
->
-  {actions.map((action) => (
-    <SpeedDialAction
-      key={action.name}
-      icon={action.icon}
-      tooltipTitle={action.name}
-    />
-  ))}
-</SpeedDial>
-     */}
-      <Box style={{display:"flex",color:"white",bgcolor:"white"}}>
-    <input id="standard-basic"   placeholder='TYPE' type="search" maxWidth="70rem" 
-    onChange={(e)=>{
+    
+      <Box sx={{display:"flex",width:"100%",color:"white",bgcolor:"white",justifyContent:"space-between",margin:"2%",}}>
+    <input  onChange={(e)=>{
       // console.log(e)
       setChat(e.target.value);
-    
+    }}
+     id="standard-basic"   placeholder='TYPE' type="search"  style={{ width:"100%",
+     marginTop: "2px",
+     padding: "3%",
+     borderRadius: "4%",
+     border:"2px solid #124C5F"}}
+    // sx={{
+    //   margin: 0,
+    //   // width: "100%",
+    //   borderRadius: "4%",
+    //   padding: "2%",
+    //   margin: "2%",
+    //   width: "inherit",}} 
+   
               
-    }} sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px",bgcolor:"white"}}
+    // }} sx={{width:"100%",borderRadius:"5%",border:"2px solid white ", padding:"1px",bgcolor:"white"}}
  />
     
       
       {/* <SendIcon /> */}
        
-      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"10px",width:"10%",height:"10%",marginTop:"1rem",padding:"10"}} endIcon={<SendIcon />}>
+      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"2%",width:"0%",height:"10%",marginTop:"1rem"}} endIcon={<SendIcon style={{color:"#124C5F",fontSize:"3rem",textAlign:"center",margin:"auto"}}/>}>
         
       </Button>  
     
