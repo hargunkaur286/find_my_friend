@@ -3,9 +3,10 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
+import pet1 from '../../assets/pet1.jpeg';
+import pet2 from '../../assets/pet2.jpeg';
+import pet3 from '../../assets/pet3.jpeg';
 import Typography from '@mui/material/Typography';
-import sample from '../../assets/sample.jpeg';
 import {Stack} from '@mui/material'
 const Cardss = () => {
   return (
@@ -17,7 +18,7 @@ const Cardss = () => {
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '50%'}}
-        image={sample}
+        image={pet1}
         alt="Live from space album cover"
       />
    
@@ -67,7 +68,7 @@ const Cardss = () => {
      <CardMedia
        component="img"
        sx={{ width: 150, height: 150, borderRadius: '50%'}}
-       image={sample}
+       image={pet2}
        alt="Live from space album cover"
      />
   
@@ -117,7 +118,7 @@ const Cardss = () => {
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '50%'}}
-        image={sample}
+        image={pet3}
         alt="Live from space album cover"
       />
    
