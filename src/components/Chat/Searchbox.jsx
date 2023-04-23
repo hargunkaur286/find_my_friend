@@ -1,29 +1,29 @@
 import { Box, FilledInput, FormControl, InputAdornment, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { TextField } from '@mui/material'
-import img from "../images/img1.jpg"
+
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import { deepOrange, deepPurple } from '@mui/material/colors';
-import Lists from './Lists';
+
 import { Search } from '@mui/icons-material';
 
 const Searchbox = () => {
   const [name, setName] = useState("")
   return (
     <>
-      <Box sx={{ width: "100%", bgcolor: "white", color: "#124C5F", border: "solid 5px", borderRadius: "0px 0px 30px 27px"}}>
+      <Box sx={{ height:560,width: "100%", bgcolor: "white", color: "#124C5F", border: "solid 5px", borderRadius: "0px 0px 30px 27px"}}>
         <Box style={{ display: "flex", justifyContent: "space-evenly" }}>
           <input onChange={(e) => {
             // console.log(e)
             setName(e.target.value);
           }} placeholder='SEARCH' type="search" style={{ maxWidth: "90em", border: "2px solid #124C5F", padding: "3%", margin: 2 }} />
           <Stack direction="row" spacing={5} marginTop={"1rem"} marginRight={"1rem"}>
-            <Search sx={{ maxWidth: "5rem", height: "auto", color: "black", cursor: "pointer", color: "#124C5F"}} />
+            <Search onClick={()=>{console.log(name)}} sx={{ maxWidth: "5rem", color: "black", cursor: "pointer", color: "#124C5F",fontSize:"3rem"}} />
           </Stack>
         </Box>
 
-        <Stack direction="column" spacing={2} sx={{ overflowY: "scroll", height: "92vh"}} >
+        <Stack direction="column" spacing={2} sx={{ }} >
           <Box display={"flex"} sx={{ width: "fit-content", backgroundColor: 'rgba(255, 255, 255, 0.4)', borderRadius: "2rem", borderLeft: 'solid 2px rgb(128,128,128,0.3)', borderTop: 'solid 2px rgb(128,128,128,0.3)', padding: "1rem" }}   >
             <Avatar sx={{ margin: "1rem" }}>H</Avatar>
             <Typography variant='h4' sx={{ margin: "1rem" }}>Harry

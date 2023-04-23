@@ -1,11 +1,12 @@
 import React from 'react'
-import Nav from '../components/Nav'
+import Nav from '../components/Chat/Nav'
 import { Filter } from '@mui/icons-material'
 import Filters from '../components/FINDPETS/Filters'
-import Cards from '../components/FINDPETS/Cards'
-import Bottom from '../components/Bottom'
+
+import Bottom from '../components/Chat/Bottom'
 import { Box } from '@mui/material'
-import Cardss from '../components/Cardss'
+
+import Cardss from '../components/FINDPETS/Cardss'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 

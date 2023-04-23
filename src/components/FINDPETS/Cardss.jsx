@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
 import Typography from '@mui/material/Typography';
-import sample from '../assets/sample.jpeg';
+import sample from '../../assets/sample.jpeg';
 import {Stack} from '@mui/material'
 const Cardss = () => {
   return (
@@ -21,12 +21,12 @@ const Cardss = () => {
         alt="Live from space album cover"
       />
    
-        <CardContent sx={{display:"flex" ,}}>
+        <CardContent sx={{display:"flex" }}>
         <Box  >
-        <Typography display="flex" component="div" variant="h5" marginRight="2rem" >
+        <Typography display="flex" component="div"  color="text.secondary" variant="h5" marginRight="2rem" >
         Name 
         <Box marginLeft="1rem">
-        gggggggggggggggggggg
+       
         </Box>
           </Typography>
           <Typography variant="subtitle1"aria-label='bio' color="text.secondary" component="div">
@@ -73,10 +73,10 @@ const Cardss = () => {
   
        <CardContent sx={{display:"flex" }}>
        <Box  >
-       <Typography display="flex" component="div" variant="h5" marginRight="2rem" >
+       <Typography display="flex" component="div" variant="h5" color="text.secondary" marginRight="2rem" >
        Name 
        <Box marginLeft="1rem">
-       gggggggggggggggggggg
+      
        </Box>
          </Typography>
          <Typography variant="subtitle1"aria-label='bio' color="text.secondary" component="div">
@@ -123,10 +123,10 @@ const Cardss = () => {
    
         <CardContent sx={{display:"flex", }}>
         <Box  >
-        <Typography display="flex" component="div" variant="h5" marginRight="2rem" >
+        <Typography display="flex" component="div" variant="h5" color="text.secondary" marginRight="2rem" >
         Name 
         <Box marginLeft="1rem">
-        gggggggggggggggggggg
+       
         </Box>
           </Typography>
           <Typography variant="subtitle1"aria-label='bio' color="text.secondary" component="div">

@@ -6,7 +6,7 @@ import Searchbox from './Searchbox'
 const Sidebar = () => {
   return (
     <Box >
-      <Box sx={{ maxWidth:"30rem",}}>
+      <Box sx={{  maxWidth:"30rem",}}>
       <Nav/>
         <Searchbox/>
     </Box>

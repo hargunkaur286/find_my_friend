@@ -10,8 +10,8 @@ const Inputs = () => {
       }
     return (
     <>
-    <Box display={"flex"} justifyItems="space-around"  >
-      <Box sx={{display:"flex",width:"100%",color:"white",bgcolor:"white",marginBottom:0}}>
+    <Box display={"flex"} justifyContent="space-evenly"  >
+      <Box sx={{display:"flex",width:"100%",color:"white",bgcolor:"white",margin:0.75}}>
     <input  onChange={(e)=>{
       // console.log(e)
       setChat(e.target.value);
@@ -21,7 +21,7 @@ const Inputs = () => {
      borderRadius: "4%",
      border:"2px solid #124C5F"}}
  />       
-      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"2%",width:"0%"}} endIcon={<SendIcon style={{color:"#124C5F",fontSize:"3rem",textAlign:"center",margin:"auto"}}/>}>
+      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"2%",width:"0%"}} endIcon={<SendIcon style={{color:"#124C5F",fontSize:"3rem",textAlign:"center",margin:"auto",cursor:"pointer"}}/>}>
         
       </Button>  
     
