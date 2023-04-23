@@ -12,7 +12,7 @@ const Searchbox = () => {
   const [name, setName] = useState("")
   return (
     <>
-      <Box sx={{ height:560,width: "100%", bgcolor: "white", color: "#124C5F", border: "solid 5px", borderRadius: "0px 0px 30px 27px"}}>
+      <Box sx={{ height:600,width: "100%", bgcolor: "white", color: "#124C5F", border: "solid 5px", borderRadius: "0px 0px 30px 27px"}}>
         <Box style={{ display: "flex", justifyContent: "space-evenly" }}>
           <input onChange={(e) => {
             // console.log(e)

@@ -18,7 +18,7 @@ const Chatpage = () => {
           Chat
         </Typography>
      
-          <Box sx={{ display: "flex", justifyContent: "center",height:650}} >
+          <Box sx={{ display: "flex", justifyContent: "center",height:655}} >
             <Sidebar />
             <Chat />
           </Box>
