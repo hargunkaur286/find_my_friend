@@ -10,7 +10,7 @@ import TextField from '@mui/material/TextField';
 function Footer() {
   return (
     <>
-    <Box sx={{marginTop: 10, marginBottom: 5}}>
+    <Box sx={{marginTop: 10, paddingBottom: 5, paddingTop: 2, backgroundColor: '#C7E7E1'}}>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
       <Typography sx={{ fontSize: 14, paddingTop: 0.5, marginRight: 2}} color="text.secondary" gutterBottom>
           Get connected with us on Social Media!
