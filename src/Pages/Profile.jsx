@@ -8,6 +8,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import sample from '../assets/sample.jpeg';
+import pet1 from '../assets/pet1.jpeg';
+import pet2 from '../assets/pet2.jpeg';
+import pet3 from '../assets/pet3.jpeg';
+import pet4 from '../assets/pet4.jpeg';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 import Footer from '../components/Footer';
@@ -46,7 +50,7 @@ return ( <>
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '100%'}}
-        image={sample}
+        image={pet4}
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -80,7 +84,7 @@ return ( <>
       <CardMedia
         component="img"
         sx={{ width: 50, height: 50, borderRadius: '50%'}}
-        image={sample}
+        image={pet1}
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -99,7 +103,7 @@ return ( <>
     <CardMedia
         component="img"
         sx={{ width: 50, height: 50, borderRadius: '50%'}}
-        image={sample}
+        image={pet2}
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' ,display: 'flex', justifyContent: 'right'}}>
@@ -118,7 +122,7 @@ return ( <>
       <CardMedia
         component="img"
         sx={{ width: 50, height: 50, borderRadius: '50%'}}
-        image={sample}
+        image={pet3}
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
