@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
 
+
 export default function BasicCard() {
   return (
     <>
@@ -22,6 +23,8 @@ export default function BasicCard() {
         <TextField sx={{display: 'flex', marginTop: 2, marginBottom: 2, minWidth: 300}} id="outlined-basic" label="Email" variant="outlined" />
         <TextField id="outlined-basic" label="Password" variant="outlined" />
         </Box>
+        <Button variant="contained" sx={{backgroundColor: '#124C5F', minWidth: 300}}>Login</Button>
+
         <Box sx={{display: 'flex'}}>
         <Typography sx={{ fontSize: 14, paddingTop: 1.5}} color="text.secondary" gutterBottom>
           Don't have an account?
