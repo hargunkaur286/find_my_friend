@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import sample from '../assets/sample.jpeg';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
+import Footer from '../components/Footer';
 
 const Profile = () => {
 const theme = useTheme();
@@ -129,6 +130,7 @@ return ( <>
       </Box>
     </Card>
     </Box>
+    <Footer />
     </>
   )
 }

@@ -7,7 +7,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
+<<<<<<< HEAD
 import { useNavigate } from 'react-router-dom';
+=======
+import Footer from '../components/Footer';
+>>>>>>> 16f27846a105c5fbd7938f6de8846c52c0c5a6dc
 
 export default function BasicCard() {
 const navigate=useNavigate()
@@ -25,6 +29,8 @@ const navigate=useNavigate()
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Last Name" variant="outlined" />
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Password" variant="outlined" />
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Email" variant="outlined" />
+        <Button variant="contained" sx={{backgroundColor: '#124C5F', minWidth: 300, marginTop: 2}}>Signup</Button>
+
         </Box>
         <Box sx={{display: 'flex'}}>
         <Typography sx={{ fontSize: 14, paddingTop: 1.5}} color="text.secondary" gutterBottom>
@@ -37,7 +43,7 @@ const navigate=useNavigate()
       </CardContent>
     </Card>
     </Box>
-    
+    <Footer />
     </>
   );
 }
