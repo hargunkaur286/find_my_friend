@@ -7,15 +7,16 @@ import Nav from '../components/Nav'
 import { Search } from '@mui/icons-material'
 import Searchbox from '../components/Searchbox'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Chatpage = () => {
   return (
     <div >
      <Box >
       <Navbar/>
-      <Typography variant='h1' textAlign={'center'}
-        color={"black"}
-        >CHAT</Typography>
+      <Typography variant="h4" component="h2" sx={{textAlign: "center", paddingTop: 1}}>
+        Chat
+      </Typography>
      
 
 
@@ -31,6 +32,7 @@ const Chatpage = () => {
      
       </Stack>
       </Box>
+      <Footer />
     </div>
   )
 }

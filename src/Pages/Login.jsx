@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
-
+import Footer from '../components/Footer';
 
 export default function BasicCard() {
   return (
@@ -36,7 +36,7 @@ export default function BasicCard() {
       </CardContent>
     </Card>
     </Box>
-    
+    <Footer />
     </>
   );
 }
