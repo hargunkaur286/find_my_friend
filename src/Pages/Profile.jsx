@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
@@ -9,24 +9,32 @@ import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import sample from '../assets/sample.jpeg';
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import Button from '@mui/material/Button'
 
 const Profile = () => {
 const theme = useTheme();
-const [email,setEmail]=useState("")
-const [name,setName]=useState("")
-const handleClick=()=>{
-  document.getElementById("email").innerHTML=`<h1>${email}</h1>`
-  document.getElementById("name").innerHTML=name
-}
-const handleDel=()=>{
-  document.getElementById("email").innerHTML=""
-  document.getElementById("name").innerHTML=""
-  setName("")
-  setEmail("")
-}
-  return (
-    <>
+const [userName,setUserName]=useState("")
+const [userEmail,setUserEmail]=useState("")
+const [disable,setDisable]=useState(true)
+
+const handleEdit=()=>{
+  setDisable(!disable)
+  }
+  const handleSave=()=>{
+   
+    // console.log(userEmail , userName)
+    localStorage.setItem("name" , userName);
+    localStorage.setItem("email" , userEmail);
+    setDisable(true)
+    
+  }
+
+  useEffect(()=>{
+setUserName(localStorage.getItem("name"))
+setUserEmail(localStorage.getItem("email"))
+  },[])
+  
+return ( <>
     <Box>
       <Navbar/>
       <Typography variant="h4" component="h2" sx={{textAlign: "center", paddingTop: 1}}>
@@ -45,26 +53,20 @@ const handleDel=()=>{
           <Typography component="div" variant="h5">
             Profile Info
           </Typography>
-          <input id="name" label="Name" variant="standard"
+          <input id="name"  disabled={disable===true} value={userName} variant="standard"
           onChange={(e)=>{
-            console.log(e)
-            console.log(e.target.value)
-            setName(e.target.value)
- 
-           }}
+           setUserName(e.target.value)
+  }}
           />
           <div>
-          <input id="email" label="Email" variant="standard" 
-          onChange={(e)=>{
-           console.log(e)
-           console.log(e.target.value)
-           setEmail(e.target.value)
+          <input id="email"  disabled={disable===true} value={userEmail} variant="standard" 
+          onChange={(e)=>{setUserEmail(e.target.value)
 
           }}
           />
           </div>
-          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleDel}>Edit</Button>
-          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleClick}>Save</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleSave}>Save</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleEdit}>Edit</Button>
         </CardContent>
       </Box>
     </Card>
