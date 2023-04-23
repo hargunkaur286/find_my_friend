@@ -23,7 +23,6 @@ export default function BasicCard() {
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Last Name" variant="outlined" />
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Password" variant="outlined" />
         <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Email" variant="outlined" />
-        <TextField sx={{display: 'flex', marginTop: 2, minWidth: 300}} id="outlined-basic" label="Phone Number" variant="outlined" />
         </Box>
         <Box sx={{display: 'flex'}}>
         <Typography sx={{ fontSize: 14, paddingTop: 1.5}} color="text.secondary" gutterBottom>
