@@ -10,53 +10,36 @@ import Inputs from './Inputs';
 
 const Chat = () => {
 
-  
+
   return (
     <>
-   
-     <Box sx={{ height:"115vh",minWidth:"20rem",maxWidth:"80rem",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)',  border: ' solid 10px #124C5F ',borderRadius:"2rem",bgcolor:"white"}}>
 
-  
-   
-   
-   <Box sx={{display:"flex",alignItems:"center",justifyContent:"flex-start", margin:"1rem",backgroundColor:"#124C5F",padding:"1rem",color:"white"}}>
-   <Avatar sx={{ bgcolor: deepOrange[500] ,marginRight:"1rem"}}>N</Avatar>
-   <span>Nishtha</span>
-    </Box>
+      <Box sx={{ height: "113vh", minWidth: "20rem", maxWidth: "80rem", backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', border: ' solid 10px #124C5F ', borderRadius: "2rem", bgcolor: "white" }}>
+        <Box sx={{ display: "flex", alignItems: 'center', justifyContent: 'space-between',backgroundColor: "#124C5F", padding: "1rem", color: "white" }}>
+          <Box  sx={{ display: "flex", alignItems: 'center'}}>
+          <Avatar sx={{ bgcolor: deepOrange[500], marginRight: "1rem" }}>N</Avatar>
+          <span>Nishtha</span>
+          </Box>
+          
+          <Box sx={{display: 'flex', justifyContent: 'flex-end'}}>
+          <CallIcon style={{
+              width: "2rem",
+              height: "auto",
+              paddingRight: 10,
+            }} />
+            <VideoCallIcon style={{
+              width: "2rem",
+              height: "auto"
+            }} />
+          </Box>  
+        </Box>
+        <Messages />
+      </Box>
 
 
-
-   
-
-    <Box display={"flex"} style={{justifyContent:"flex-end",color:"white",alignItems:"start"}}>  
-<Stack direction="row" position={"absolute"} spacing={5} marginTop={"-5rem"} marginRight={"2rem"}>
-<CallIcon style={{    width:"2rem",
-    height: "auto"
-}}/>
-<VideoCallIcon  style={{    width:"2rem",
-    height: "auto"
-}} />
-</Stack>
- 
-   </Box>
-   <Messages   />
-   </Box>
-  
-   
-   
-  
-   
-
-   
-   
-  
-
-   
-   
-         
     </>
-       
-  
+
+
   )
 }
 
