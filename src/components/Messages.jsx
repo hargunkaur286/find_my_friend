@@ -20,7 +20,7 @@ width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10p
    
 <>
     <Box  >
-       <Box  height="40rem" sx={{overflowY: "auto",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem",maxWidth:"100%",bgcolor:"white",height:"90vh"}}>
+       <Box   sx={{maxHeight:520,overflowY: "scroll",fontFamily:"'Roboto', 'sans-serif'",fontSize:"2rem",maxWidth:"100%",bgcolor:"white"}}>
         
          <Box sx={LeftTextstyle}
          >Hi,How are you?</Box>
@@ -48,14 +48,8 @@ width:"fit-content",backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10p
       <Box component="div" sx={RightTextstyle}>
       Hi,Iam Fine.
           </Box>
-          <Box sx={LeftTextstyle}>Hi,How are you?</Box>
-      <Box component="div" sx={RightTextstyle}>
-      Hi,Iam Fine.
-          </Box>
-          <Box sx={LeftTextstyle}>Hi,How are you?</Box>
-      <Box component="div" sx={RightTextstyle}>
-      Hi,Iam Fine.
-          </Box>
+          
+        
          
        </Box>
          <Inputs/> 

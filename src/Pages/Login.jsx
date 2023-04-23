@@ -7,11 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
-<<<<<<< HEAD
+
 import {useNavigate} from "react-router-dom"
-=======
-import Footer from '../components/Footer';
->>>>>>> 16f27846a105c5fbd7938f6de8846c52c0c5a6dc
+
+import Footer from '../components/Footer'
 
 export default function BasicCard() {
   const navigate=useNavigate()

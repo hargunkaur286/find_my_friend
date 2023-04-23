@@ -61,7 +61,7 @@ setSpecies(e.target.value)
         >
           <option value={10}>Dog</option>
           <option value={20}>Cat</option>
-          <option value={30}></option>
+          <option value={30}>Birds</option>
          
          
         </NativeSelect>

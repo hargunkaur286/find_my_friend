@@ -17,12 +17,12 @@ const Chatpage = () => {
         <Typography variant="h4" component="h2" sx={{ textAlign: "center", paddingTop: 1 }}>
           Chat
         </Typography>
-        <Stack  >
-          <Box sx={{ display: "flex", justifyContent: "center", height: 1000}} >
+     
+          <Box sx={{ display: "flex", justifyContent: "center"}} >
             <Sidebar />
             <Chat />
           </Box>
-        </Stack>
+      
       </Box>
       <Footer />
     </div>

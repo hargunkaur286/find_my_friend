@@ -10,19 +10,18 @@ const Inputs = () => {
       }
     return (
     <>
-    <Box display={"flex"} justifyContent="space-between"  >
-      <Box sx={{display:"flex",width:"100%",color:"white",bgcolor:"white",justifyContent:"space-between",margin: 2,}}>
+    <Box display={"flex"} justifyItems="space-around"  >
+      <Box sx={{display:"flex",width:"100%",color:"white",bgcolor:"white",marginBottom:0}}>
     <input  onChange={(e)=>{
       // console.log(e)
       setChat(e.target.value);
     }}
      id="standard-basic"   placeholder='TYPE' type="search"  style={{ width:"100%",
-     marginTop: "2px",
      padding: "3%",
      borderRadius: "4%",
      border:"2px solid #124C5F"}}
  />       
-      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"2%",width:"0%",height:"10%",marginTop:"1rem"}} endIcon={<SendIcon style={{color:"#124C5F",fontSize:"3rem",textAlign:"center",margin:"auto"}}/>}>
+      <Button onClick={handleClick} sx={{marginRight:"2%",borderRadius:"2%",width:"0%"}} endIcon={<SendIcon style={{color:"#124C5F",fontSize:"3rem",textAlign:"center",margin:"auto"}}/>}>
         
       </Button>  
     
