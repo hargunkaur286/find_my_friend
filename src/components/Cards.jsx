@@ -17,7 +17,7 @@ export default function BasicCard() {
     <>
     <Box>
     {/* <CardMedia image={sample}> */}
-    <Box sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between'}}>
+    <Box sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
     <Card sx={{ marginTop: 2, width: 120, paddingLeft: 5, paddingRight: 5, paddingTop: 3, paddingBottom: 3, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))'}}>
       <CardContent>
         <CardMedia component="img" height="" image={image1} alt=""/>

@@ -12,7 +12,7 @@ import review3 from '../assets/review3.png'
 export default function MultiActionAreaCard() {
   return (
     <>
-    <Box sx={{display: 'flex'}}>
+    <Box sx={{display: 'flex', justifyContent: 'space-evenly'}}>
     <Card sx={{ maxWidth: 500 , margin: 2}}>
       <CardActionArea>
         <CardMedia
@@ -32,8 +32,6 @@ export default function MultiActionAreaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
     </Card>
 
     <Card sx={{ maxWidth: 500, margin: 2 }}>
@@ -55,15 +53,13 @@ export default function MultiActionAreaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
     </Card>
 
     <Card sx={{ maxWidth: 700, margin: 2 }}>
       <CardActionArea>
         <CardMedia
           component="img"
-        //   minHeight="250"
+          minHeight='100'
           maxHeight="100"
           sx={{background: '#DDC7ED'}}
           image={review3}
@@ -78,8 +74,7 @@ export default function MultiActionAreaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-      </CardActions>
+
     </Card>
     </Box>
     

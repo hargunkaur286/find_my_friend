@@ -5,6 +5,7 @@ import Cards from '../components/Cards'
 import Third from '../components/Third'
 import Fourth from '../components/Fourth'
 import Box from '@mui/material/Box';
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Cards/>
       <Third />
       <Fourth />
+      <Footer />
     </Box>
   )
 }

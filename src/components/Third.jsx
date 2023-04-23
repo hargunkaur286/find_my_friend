@@ -10,7 +10,7 @@ import dogman from '../assets/dogman.svg'
 function Third() {
   return (
     <>
-    <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
+    <Box sx={{display: 'flex', justifyContent: 'space-evenly'}}>
         <CardMedia
         component="img"
         image={dog}
@@ -26,7 +26,7 @@ function Third() {
     </Card>
     </Box>
 
-    <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
+    <Box sx={{display: 'flex', justifyContent: 'space-evenly'}}>
     <Card 
     sx={{minWidth: 100, maxWidth: 600, height: 300, margin: 3, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', padding: 5}}>
         <Typography variant="h4"
@@ -38,7 +38,7 @@ No one appreciates the very special genius of your conversation as the dog does.
     <CardMedia
         component="img"
         image={dogman}
-        sx={{minHeight: 100, maxHeight: 700, minWidth: 100, maxWidth: 500}}
+        sx={{minHeight: 100, maxHeight: 500, minWidth: 100, maxWidth: 300}}
         />
     </Box>
     </>
