@@ -7,10 +7,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
+import { useNavigate } from 'react-router-dom';
 
 export default function BasicCard() {
-  return (
-    <>
+const navigate=useNavigate()
+
+  return (    <>
     <Navbar />
     <Box sx={{display: 'flex', justifyContent: 'center', margin: 2, marginTop: 10, justifyItems: 'center'}}>
     <Card sx={{ minWidth: 500, maxWidth: 700, display: 'flex', alignItems: 'center', justifyContent: 'center', justifyItems: 'center' }}>
@@ -29,7 +31,7 @@ export default function BasicCard() {
           Already have an account?
         </Typography>
         <CardActions>
-        <Button size="small">Log In Here</Button>
+        <Button size="small" onClick={()=>{navigate("/login")}}>Log In Here</Button>
       </CardActions>
         </Box>
       </CardContent>

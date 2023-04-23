@@ -7,8 +7,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Navbar from '../components/Navbar';
 import TextField from '@mui/material/TextField';
+import {useNavigate} from "react-router-dom"
 
 export default function BasicCard() {
+  const navigate=useNavigate()
   return (
     <>
     <Navbar />
@@ -27,7 +29,7 @@ export default function BasicCard() {
           Don't have an account?
         </Typography>
         <CardActions>
-        <Button size="small">Sign up Here</Button>
+        <Button size="small"onClick={()=>{navigate("/signup")}} >Sign up Here</Button>
       </CardActions>
         </Box>
       </CardContent>

@@ -44,7 +44,8 @@ function Navbar() {
           <CardMedia 
           component="img"
           image={logo}
-          sx={{display: 'flex', height: 50, width: 192}}
+          onClick={()=>{navigate("/")}}
+          sx={{display: 'flex', height: 50, width: 192,cursor:"pointer"}}
           />
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -98,8 +99,10 @@ function Navbar() {
           </Box>
           <Box>
           <Stack spacing={2} direction="row">
-              <Button variant="contained" sx={{backgroundColor: '#124C5F'}}>Sign In</Button>
-              <Button variant="contained" sx={{backgroundColor: '#C7E7E1', color: '#124C5F'}}>Register</Button>
+              <Button variant="contained" sx={{backgroundColor: '#124C5F'}}
+              onClick={()=>{navigate("/login")}}
+              >LOG IN</Button>
+              <Button variant="contained" onClick={()=>{navigate("/signup")}} sx={{backgroundColor: '#C7E7E1', color: '#124C5F'}}>Register</Button>
             </Stack>
           </Box>
         </Toolbar>
