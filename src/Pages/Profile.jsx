@@ -42,7 +42,7 @@ return ( <>
         Profile Page
       </Typography>
       <Box sx={{display: 'flex', justifyContent: 'center'}}>
-      <Card sx={{ display: 'flex', alignItems: 'center', borderRadius: 10, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2, width: 1500}}>
+      <Card sx={{ display: 'flex', alignItems: 'center', borderRadius: 10, backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', borderLeft: 'solid 1px rgba(255, 255, 255, 0.3)', borderTop: 'solid 1px rgba(255, 255, 255, 0.8)', backgroundImage: 'linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0))', margin: 2, width: 1500,display: 'flex', justifyContent: 'center'}}>
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '100%'}}
@@ -55,19 +55,22 @@ return ( <>
             Profile Info
           </Typography>
           <input id="name"  disabled={disable===true} value={userName} variant="standard"
+          style={{margin: 5, padding: 3, width: 200}}
           onChange={(e)=>{
            setUserName(e.target.value)
+           
   }}
           />
           <div>
           <input id="email"  disabled={disable===true} value={userEmail} variant="standard" 
+          style={{margin: 5, padding: 2, width: 200}}
           onChange={(e)=>{setUserEmail(e.target.value)
 
           }}
           />
           </div>
-          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleSave}>Save</Button>
           <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleEdit}>Edit</Button>
+          <Button variant="contained" sx={{backgroundColor: '#124C5F', marginTop: 2, marginLeft: 2 }} onClick={handleSave}>Save</Button>
         </CardContent>
       </Box>
     </Card>
