@@ -5,9 +5,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import review1 from '../assets/review1.png'
-import review2 from '../assets/review2.png'
-import review3 from '../assets/review3.png'
+import review1 from '../assets/review1_crop.png'
+import review2 from '../assets/review2_crop.png'
+import review3 from '../assets/review3_crop.png'
 
 export default function MultiActionAreaCard() {
   return (
@@ -55,7 +55,7 @@ export default function MultiActionAreaCard() {
       </CardActionArea>
     </Card>
 
-    <Card sx={{ maxWidth: 700, margin: 2 }}>
+    <Card sx={{ maxWidth: 500, margin: 2 }}>
       <CardActionArea>
         <CardMedia
           component="img"
