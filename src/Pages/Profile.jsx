@@ -50,7 +50,7 @@ return ( <>
       <CardMedia
         component="img"
         sx={{ width: 150, height: 150, borderRadius: '100%'}}
-        image={pet4}
+        image={sample}
         alt="Live from space album cover"
       />
       <Box sx={{ display: 'flex', flexDirection: 'column' }}>
