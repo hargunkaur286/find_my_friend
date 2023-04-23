@@ -7,7 +7,9 @@ const Filters = () => {
   return (
   <>
   <Box>
-        <Typography marginTop="1rem" variant='h1' textAlign={"center"} fontStyle={"italic"} >FIND  PETS</Typography>
+  <Typography variant="h4" component="h2" sx={{textAlign: "center", paddingTop: 1}}>
+        Find Pets
+      </Typography>
     <Choices/>
     
     
