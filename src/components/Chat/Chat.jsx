@@ -14,9 +14,9 @@ const Chat = () => {
   return (
     <>
 
-      <Box sx={{  minWidth: "20rem", maxWidth: "80rem", backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', border: ' solid 5px #124C5F ', borderRadius: "2rem", bgcolor: "white" }}>
+      <Box sx={{ height:660, maxHeight:700,minWidth: "20rem", maxWidth: "80rem", backgroundColor: 'rgba(255, 255, 255, 0.4)', boxShadow: '10px 10px 10px rgba(30, 30, 30, 0.1)', border: ' solid 5px #124C5F ', borderRadius: "1rem", bgcolor: "white" }}>
         <Box sx={{ display: "flex", alignItems: 'center', justifyContent: 'space-between',backgroundColor: "#124C5F", padding: "1rem", color: "white" }}>
-          <Box  sx={{ display: "flex", alignItems: 'center'}}>
+          <Box  sx={{ display: "flex", alignItems: 'center',borderRadius:"5px"}}>
           <Avatar sx={{ bgcolor: deepOrange[500], marginRight: "1rem" }}>N</Avatar>
           <span>Nishtha</span>
           </Box>
